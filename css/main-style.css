@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*/
 * {
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
@@ -10,6 +10,7 @@
 body {
     margin: 0;
     background-color: #212121;
+    overflow-x: hidden;
 }
 
 html,
@@ -27,7 +28,7 @@ ul {
     list-style: none;
 }
 
-.header .container {
+.container {
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 80px;
@@ -48,7 +49,9 @@ ul {
 .header .container .nav-icons>i:nth-child(2),
 .nav-links>li>a,
 .main .container .text-title h1,
-.ex-info
+.ex-info, .button-play,
+.container,
+.main .container button
 {
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -126,17 +129,6 @@ ul {
     margin: auto;
 }
 
-.main {
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-}
-
-.main .img-film{
-    position: relative;
-    width: 100%;
-}
 
 .main .img-film img{
     position: absolute;
@@ -162,8 +154,6 @@ ul {
 
 .main .container .text {
     padding-bottom: 20px;
-    display:table-cell;
-    vertical-align:middle;
 }
 
 .main .container button{
@@ -175,6 +165,12 @@ ul {
     word-spacing: 3px;
     font-size: 18px;
     margin-top: 30px;
+    border-radius: 5px;
+}
+
+.main .container button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -194,22 +190,17 @@ ul {
 }
 
 
-@media (min-width:849px) and (max-width:992px) {
+@media screen and (min-width:849px) and (max-width:900px) {
 
     .nav-links>li>a {
         color: white;
         display: flex;
         align-items: center;
-        font-size: 12px;
     }
 
 }
 
-@media (max-width:849px) {
-
-    .text .title-desc p {
-        max-width: 100%;
-    }
+@media screen and (max-width:849px) {
 
     .header .container{
         margin: 0px 30px;
@@ -263,6 +254,7 @@ ul {
     }
 
     .text .title-desc p {
+        max-width: 100%;
         font-size: 17px;
         padding-bottom: 80px;
     }
@@ -299,10 +291,169 @@ ul {
         display: flex;
         position: absolute;
         bottom: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column; 
         padding-bottom: 66px;
-        width: 100%;
+        width: calc(100% - 60px);
     }
+}
+
+.button-play {
+    width: 170px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-top: 13px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.button-play:active {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+.play {
+    margin: auto;
+}
+
+@media screen and (max-width:849px) {
+
+    .button-play {
+        margin-top: 0;
+    }
+
+    .play {
+        margin-bottom: 20px;
+    }
+
+    .text {
+        /* padding-bottom: 20px; */
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .button-play:active {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    .header .container .nav-icons {
+        display: flex;
+        align-items: center;
+        margin-right: 42px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
+
+/* Latest Movies */
+.latest-movies-pages {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+.latest-movies-pages .container .text-latest-movies-pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-movies-pages .container h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.movies-container .card-movies p {
+    position: absolute;
+    top: 60px;
+    padding-left: 20px;
+    color: white;
+    font-size: 17px;
+
+}
+
+.latest-movies-pages .container .text-latest-movies-pages{
+    height: 80px;
+}
+
+.latest-movies-pages .container .text-latest-movies-pages p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: red;
+    cursor: pointer;
+}
+
+
+.card-movies img {
+    height: 100%;
+}
+
+.card-movies h5 {
+    position: absolute;
+    top: 34px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.movies-container  .card-movies .button-play {
+    position: absolute;
+    left: 16px;
+    color: white;
+    font-size: 11px;
+    width: 74px;
+    height: 24px;
+    bottom: 25px;
+}
+
+.movies-container  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 200px;
+}
+
+@media screen and (max-width:1200px){
+    .container {
+        margin: 0px 30px;
+    }
+    .main .container {
+        margin: 0px 30px;
+    }
+}
+
+.card-movies img{
+    width: 100%;
+}
+
+.swiper-button-next{
+    color: white;
+}
+
+.swiper-button-prev{
+    color: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 25px;
 }
