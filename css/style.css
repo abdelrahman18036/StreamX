@@ -1,0 +1,365 @@
+@import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s;
+}
+
+body{
+  display: flex;
+  background-image: url(../media/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+ul{list-style: none;}
+
+main{
+  width: calc(100% - 550px);
+  border-left: 1px solid #e4e8f1;
+  border-right: 1px solid #e4e8f1;
+  padding-top: 30px;
+}
+
+.container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.sidebar{
+  width: 250px;
+  margin: 40px;
+}
+
+.sidebar .logo{
+  width: 140px;
+}
+
+.sidebar section{
+  margin: 30px 0;
+}
+
+.sidebar section p{
+  color: #b0c1cf;
+  font-size: 14px;
+}
+
+.sidebar section ul{
+  margin-top: 22px;
+}
+
+.sidebar section ul li a p{
+  font-weight: bold;
+  color: #8aa0b7;
+}
+.sidebar section ul li a{
+  display: flex;
+  align-content: center;
+  text-decoration: none;
+}
+.sidebar section ul svg{
+  fill: #8aa0b7;
+  height: 40px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sidebar section ul p{
+  display: table-cell;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.sidebar section ul li:hover p,
+#active p
+{
+  color: #4b5c6b;
+}
+
+.sidebar section ul li:hover svg,
+#active svg
+{
+  fill: red;
+}
+
+.friends{
+  width: 300px;
+  margin: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #8aa0b7;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side{
+  position: relative;
+}
+
+.left-side input{
+  padding: 10px;
+  padding-left: 60px;
+  outline: none;
+  border: 2.3px solid #c4ccdb;
+  border-radius: 20px;
+  height: 45px;
+  width: 325px;
+  color: #768797;
+  font-size: 16px;
+}
+
+.left-side svg{
+  fill: #c4ccdb;
+  position: absolute;
+  left: 22px;
+  top: 12px;
+}
+
+header .right-side{
+  display: flex;
+  align-items: center;
+}
+
+header .right-side svg{
+  fill: #6b7887;
+  margin: 0 15px;
+}
+
+header .profile{
+  display:flex;
+  align-items: center;
+  
+}
+
+header .profile img{
+  width: 55px;
+  clip-path: circle();
+  margin: 0 20px 0 15px;
+}
+
+header .profile .name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+header .profile .username{
+  color: #a5b7c6;
+}
+
+header .profile .profile-photo{
+  position: relative;
+}
+
+header .profile .profile-photo .circle{
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 10px;
+  top: -1px;
+  border-radius: 50%;
+  border: 5px solid#E91E63;
+  border-left-color: transparent;
+  animation-name: spin;
+  animation-duration: 1s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes spin{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+/* Section 2 */
+
+.home-films{
+  margin-top: 60px;
+}
+
+.home-films .container{
+  position: relative;
+  background: 
+  url("../media/film-2.jpeg")
+  ;
+  background-blend-mode: darken;
+  background-size: cover;
+  width: calc(100% - 100px);
+  height: 460px;
+  border-radius: 40px;
+}
+
+.home-films .container h1{
+  font-size: 50px;
+  font-family: 'Couture', sans-serif;
+}
+
+
+.home-films .container .left{
+  position: absolute;
+  bottom: 160px;
+  left: 50px;
+  color: white;
+}
+
+.home-films .container p{
+  padding: 10px;
+}
+
+.home-films img{
+  object-fit: cover;
+}
+
+.home-films .container .left .buttons {
+  margin-top: 20px;
+  display: flex;
+  width: 190px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-films .container .left button{
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.home-films .container .left .watch{
+  background-color: #eb0f6e;
+  font-size: 17px;
+  width: 120px;
+  height: 55px;
+}
+
+.home-films .container .left .add{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 60px;
+  height: 55px;
+  font-size: 40px;
+}
+
+.home-films .container .right{
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  display: flex;
+}
+
+.home-films .container .right div{
+  width: 150px;
+  height: 100px;
+  margin-right: 5px;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.home-films .container .right div img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.home-films .container .right #active{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  transform: scale(1.3);
+}
+
+main .continue-watching{
+  margin-top: 60px;
+  color: #3b4c5f;
+}
+
+main .continue-watching .slider{
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+main .continue-watching .slider .card{
+  width: 300px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+main .continue-watching .slider .card:hover{
+  transform: scale(1.05);
+}
+
+main .continue-watching .slider .card img{
+  width: 100%;
+  object-fit: cover;
+  height: 60%;
+}
+
+main .continue-watching .slider .card .border{
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  top: calc(60% - 3px);
+}
+
+main .continue-watching .slider .card .text{
+  text-align: center;
+  margin-top: 15px;
+}
+
+main .continue-watching .slider .card .text .title{
+  color: #4f5a7a;
+  font-weight: bold;
+}
+main .continue-watching .slider .card .text .time-left{
+  color: #4f5a7a;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+main .continue-watching .slider .card .text button{
+  width: 55px;
+  height: 55px;
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eb0f6e;
+  margin-top: 5px;
+}
+
+main .continue-watching .slider .card .text button svg{
+  fill: white;
+}
