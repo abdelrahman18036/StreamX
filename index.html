@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="/css/style.css">
-
   <title>StreamX</title>
 </head>
 
@@ -154,334 +154,568 @@
         </div>
       </div>
     </div>
-    <div class="continue-watching">
+    <section class="slider-container">
       <div class="container">
-        <h1>Continue Watching</h1>
-        <div class="slider">
-          <div class="card">
-            <img src="media/card-1.jpg" alt="">
-            <div style="width: 90%;" class="border"></div>
-            <div class="text">
-              <p class="title">TENET Posterimgur</p>
-              <p class="time-left">Time left: 20min</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-2.jpg" alt="">
-            <div style="width: 60%;" class="border"></div>
-            <div class="text">
-              <p class="title">The Black List</p>
-              <p class="time-left">Time left: 60min</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-3.jpg" alt="">
-            <div style="width: 90%;" class="border"></div>
-            <div class="text">
-              <p class="title">Breaking Bad</p>
-              <p class="time-left">Time left: 20min</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-4.jpg" alt="">
-            <div style="width: 90%;" class="border"></div>
-            <div class="text">
-              <p class="title">Extraction</p>
-              <p class="time-left">Time left: 20min</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
+        <div class="header">
+          <h1 style="float: left">Continue Watching</h1>
+          <div class="swiper-button-next" id="first-next"></div>
+          <div class="swiper-button-prev" id="first-prev"></div>
+          <div class="clear"></div>
         </div>
-      </div>
-    </div>
-    <div class="continue-watching">
-      <div class="container">
-        <h1>Trending movies </h1>
-        <div class="slider">
-          <div class="trending-card">
-            <div class="text-title">
-              <h1 class="title-trend">Army of the dead</h1>
-              <p class="year">2021</p>
-              <div class="info">
-                <img class="imdb-photo" src="/IMDB_Logo_2016.svg.png" alt="">
-                <h4>7.9rating</h4>
+        <div class="cont swiper-container swiper">
+          <div class="slider swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div style="width: 90%;" class="border"></div>
+              <div class="text">
+                <p class="title">TENET Posterimgur</p>
+                <p class="time-left">Time left: 20min</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%" height="100%"> <path d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" /></svg> 
+                </button>
               </div>
             </div>
-          </div>
-          <div class="trending-card" style="background-image: url(/1161070.jpg);">
-            <div class="text-title">
-              <h1 class="title-trend">Army of the dead</h1>
-              <p class="year">2021</p>
-              <div class="info">
-                <img class="imdb-photo" src="/IMDB_Logo_2016.svg.png" alt="">
-                <h4>7.9rating</h4>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div style="width: 60%;" class="border"></div>
+              <div class="text">
+                <p class="title">The Black List</p>
+                <p class="time-left">Time left: 60min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="continue-watching">
-      <div class="container">
-        <h1>Suggestions</h1>
-        <div class="slider">
-          <div class="card">
-            <img src="media/card-1.jpg" alt="">
-            <div class="text">
-              <p class="title"> The Matrix</p>
-              <p class="time-left">Time : 136min</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-2.jpg" alt="">
-            <!-- <div style="width: 60%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Inception </p>
-              <p class="time-left">Time : 148min</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-3.jpg" alt="">
-            <!-- <div style="width: 90%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Breaking Bad</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-4.jpg" alt="">
-            <!-- <div style="width: 90%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Extraction</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="continue-watching">
-      <div class="container">
-        <h1>Action</h1>
-        <div class="slider">
-          <div class="card2"
-            style="background-image: url(/spider-man.jpg); background-position: center; background-size: cover;">
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <p>7.9</p>
-            </div>
-            <div class="text-title">
-              <h1 class="title-trend" id="card2-h">Spider Man</h1>
-              <p class="year" id="card2-p">2021</p>
-              <div class="buttons">
-                <button class="watch">Watch</button>
-                <button class="add">+</button>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div style="width: 90%;" class="border"></div>
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time left: 20min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
               </div>
             </div>
-          </div>
-          <div class="card2"
-            style="background-image: url(/media/card2.jpg); background-position: center; background-size: cover;">
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <p>7.9</p>
-            </div>
-            <div class="text-title">
-              <h1 class="title-trend" id="card2-h">John Wick</h1>
-              <p class="year" id="card2-p">2021</p>
-              <div class="buttons">
-                <button class="watch">Watch</button>
-                <button class="add">+</button>
+            <div class="card swiper-slide">
+              <img src="media/card-4.jpg" alt="">
+              <div style="width: 90%;" class="border"></div>
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time left: 20min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
               </div>
             </div>
-          </div>
-          <div class="card2"
-            style="background-image: url(/media/card33.jpg); background-position: center; background-size: cover;">
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <p>7.9</p>
-            </div>
-            <div class="text-title">
-              <h1 class="title-trend" id="card2-h">INSIDIOUS</h1>
-              <p class="year" id="card2-p">2021</p>
-              <div class="buttons">
-                <button class="watch">Watch</button>
-                <button class="add">+</button>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div style="width: 90%;" class="border"></div>
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time left: 20min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
               </div>
             </div>
-          </div>
-
-          <div class="card2"
-            style="background-image: url(/media/card22.jpg); background-position: center; background-size: cover;">
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <p>7.9</p>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div style="width: 90%;" class="border"></div>
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time left: 20min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
             </div>
-            <div class="text-title">
-              <h1 class="title-trend" id="card2-h">The Shutter island</h1>
-              <p class="year" id="card2-p">2021</p>
-              <div class="buttons">
-                <button class="watch">Watch</button>
-                <button class="add">+</button>
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div style="width: 90%;" class="border"></div>
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time left: 20min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="continue-watching">
+      <div class="clear"></div>
+    </section>
+    <section class="slider-container">
       <div class="container">
-        <h1>Comedy</h1>
-        <div class="slider">
-          <div class="card">
-            <img src="media/card-1.jpg" alt="">
-            <div class="text">
-              <p class="title">TENET Posterimgur</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+        <div class="header">
+          <h1 style="float: left">Trending Movies</h1>
+          <div class="swiper-button-next" id="second-next"></div>
+          <div class="swiper-button-prev" id="second-prev"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="trend swiper-container swiper">
+          <div class="slider swiper-wrapper">
+            <div class="trending-card swiper-slide">
+              <div class="text-title">
+                <h1 class="title-trend">Army of the dead</h1>
+                <p class="year">2021</p>
+                <div class="info">
+                  <img class="imdb-photo" src="media/IMDB_Logo_2016.svg.png" alt="">
+                  <h4>7.9rating</h4>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="media/card-2.jpg" alt="">
-            <!-- <div style="width: 60%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">The Black List</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+            <div class="trending-card swiper-slide" style="background-image: url(media/1161070.jpg);">
+              <div class="text-title">
+                <h1 class="title-trend">Army of the dead</h1>
+                <p class="year">2021</p>
+                <div class="info">
+                  <img class="imdb-photo" src="media/IMDB_Logo_2016.svg.png" alt="">
+                  <h4>7.9rating</h4>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="media/card-3.jpg" alt="">
-            <!-- <div style="width: 90%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Breaking Bad</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/card-4.jpg" alt="">
-            <!-- <div style="width: 90%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Extraction</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+            <div class="trending-card swiper-slide" style="background-image: url(media/1161070.jpg);">
+              <div class="text-title">
+                <h1 class="title-trend">Army of the dead</h1>
+                <p class="year">2021</p>
+                <div class="info">
+                  <img class="imdb-photo" src="media/IMDB_Logo_2016.svg.png" alt="">
+                  <h4>7.9rating</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="continue-watching">
+    </section>
+    <section class="slider-container">
       <div class="container">
-        <h1>Science Fiction</h1>
-        <div class="slider">
-          <div class="card">
-            <img src="media/card-1.jpg" alt="">
-            <div class="text">
-              <p class="title">TENET Posterimgur</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+        <div class="header">
+          <h1 style="float: left">Suggestions</h1>
+          <div class="swiper-button-next" id="third-next"></div>
+          <div class="swiper-button-prev" id="third-prev"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="sugg swiper-container swiper">
+          <div class="slider swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div class="text">
+                <p class="title"> The Matrix</p>
+                <p class="time-left">Time : 136min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="media/card-2.jpg" alt="">
-            <!-- <div style="width: 60%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">The Black List</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div class="text">
+                <p class="title">Inception </p>
+                <p class="time-left">Time : 148min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="media/card-3.jpg" alt="">
-            <!-- <div style="width: 90%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Breaking Bad</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="media/card-4.jpg" alt="">
-            <!-- <div style="width: 90%;" class="border"></div> -->
-            <div class="text">
-              <p class="title">Extraction</p>
-              <p class="time-left">Time : 1hr</p>
-              <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
-                  height="100%">
-                  <path
-                    d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
-                </svg> </button>
+            <div class="card swiper-slide">
+              <img src="media/card-4.jpg" alt="">
+              <!-- <div style="width: 90%;" class="border"></div> -->
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div class="text">
+                <p class="title"> The Matrix</p>
+                <p class="time-left">Time : 136min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div class="text">
+                <p class="title">Inception </p>
+                <p class="time-left">Time : 148min</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="slider-container">
+      <div class="container">
+        <div class="header">
+          <h1 style="float: left">Action</h1>
+          <div class="swiper-button-next" id="fourth-next"></div>
+          <div class="swiper-button-prev" id="fourth-prev"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="act swiper-container swiper">
+          <div class="slider swiper-wrapper">
+            <div class="card2 swiper-slide"
+              style="background-image: url(media/spider-man.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">Spider Man</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide"
+              style="background-image: url(media/card2.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">John Wick</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide"
+              style="background-image: url(/media/card33.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">INSIDIOUS</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide"
+              style="background-image: url(/media/card22.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">The Shutter island</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide"
+              style="background-image: url(media/spider-man.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">Spider Man</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide"
+              style="background-image: url(media/card2.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">John Wick</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide"
+              style="background-image: url(/media/card33.jpg); background-position: center; background-size: cover;">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>7.9</p>
+              </div>
+              <div class="text-title">
+                <h1 class="title-trend" id="card2-h">INSIDIOUS</h1>
+                <p class="year" id="card2-p">2021</p>
+                <div class="buttons">
+                  <button class="watch">Watch</button>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider-container">
+      <div class="container">
+        <div class="header">
+          <h1 style="float: left">Comedy</h1>
+          <div class="swiper-button-next" id="fifth-next"></div>
+          <div class="swiper-button-prev" id="fifth-prev"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="com swiper-container swiper">
+          <div class="slider swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div class="text">
+                <p class="title">TENET Posterimgur</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div class="text">
+                <p class="title">The Black List</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-4.jpg" alt="">
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div class="text">
+                <p class="title">TENET Posterimgur</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div class="text">
+                <p class="title">The Black List</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider-container">
+      <div class="container">
+        <div class="header">
+          <h1 style="float: left">Science Fiction</h1>
+          <div class="swiper-button-next" id="sixth-next"></div>
+          <div class="swiper-button-prev" id="sixth-prev"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="sci swiper-container swiper">
+          <div class="slider swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div class="text">
+                <p class="title">TENET Posterimgur</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div class="text">
+                <p class="title">The Black List</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-4.jpg" alt="">
+              <div class="text">
+                <p class="title">Extraction</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-1.jpg" alt="">
+              <div class="text">
+                <p class="title">TENET Posterimgur</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-2.jpg" alt="">
+              <div class="text">
+                <p class="title">The Black List</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="media/card-3.jpg" alt="">
+              <div class="text">
+                <p class="title">Breaking Bad</p>
+                <p class="time-left">Time : 1hr</p>
+                <button><svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="100%"
+                    height="100%">
+                    <path
+                      d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z" />
+                  </svg> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <div class="quick-start">
     <div class="genre">
@@ -573,6 +807,6 @@
     </div>
   </div>
 </body>
+<script src="/js/swiper-bundle.min.js"></script>
 <script src="/js/main.js"></script>
-
 </html>

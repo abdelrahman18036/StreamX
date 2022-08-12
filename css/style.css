@@ -1,11 +1,14 @@
-@import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
 
+
+
+@import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     transition: all 0.2s;
+    user-select: none;
 }
 
 body {
@@ -13,6 +16,10 @@ body {
     background-image: url(../media/background.png);
     background-size: cover;
     background-position: center;
+}
+
+.clear{
+    clear: both;
 }
 
 ul {
@@ -154,7 +161,6 @@ header .right-side svg {
 header .profile {
     display: flex;
     align-items: center;
-
 }
 
 header .profile img {
@@ -196,11 +202,11 @@ header .profile .profile-photo .circle {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
+
 
 /* Section 2 */
 
@@ -210,8 +216,7 @@ header .profile .profile-photo .circle {
 
 .home-films .container {
     position: relative;
-    background:
-        url("../media/film-2.jpeg");
+    background: url("../media/film-2.jpeg");
     background-blend-mode: darken;
     background-size: cover;
     width: calc(100% - 100px);
@@ -223,7 +228,6 @@ header .profile .profile-photo .circle {
     font-size: 50px;
     font-family: 'Couture', sans-serif;
 }
-
 
 .home-films .container .left {
     position: absolute;
@@ -315,66 +319,76 @@ header .profile .profile-photo .circle {
     transform: scale(1.3);
 }
 
-main .continue-watching {
+main section {
     margin-top: 60px;
     color: #3b4c5f;
     overflow-x: hidden;
 }
 
-main .continue-watching .slider {
-    margin-top: 20px;
+main section {
+    position: relative;
+    height: 440px;
     width: 100%;
-    height: 400px;
-    padding: 20px;
-    overflow: hidden;
-    display: flex;
 }
 
-main .continue-watching .slider .card {
-    width: 300px;
+
+main section .slider {
+    width: auto;
+    height: calc(100% - 42px);
+    display: flex;
+    position: absolute;
+}
+
+main section .slider .card {
     height: 100%;
-    margin-right: 20px;
     border-radius: 30px;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: white;
     position: relative;
-
+    box-shadow: 2px 2px 15px grey;  
 }
 
-main .continue-watching .slider .card:hover {
+main section .slider .card:hover{
     transform: scale(1.05);
 }
 
-main .continue-watching .slider .card img {
+.swiper-container
+{
+    height: 400px;
+    padding: 20px;
+}
+
+
+main section .slider .card img {
     width: 100%;
     object-fit: cover;
     height: 60%;
 }
 
-main .continue-watching .slider .card .border {
+main section .slider .card .border {
     height: 3px;
     background-color: red;
     position: absolute;
     top: calc(60% - 3px);
 }
 
-main .continue-watching .slider .card .text {
+main section .slider .card .text {
     text-align: center;
     margin-top: 15px;
 }
 
-main .continue-watching .slider .card .text .title {
+main section .slider .card .text .title {
     color: #4f5a7a;
     font-weight: bold;
 }
 
-main .continue-watching .slider .card .text .time-left {
+main section .slider .card .text .time-left {
     color: #4f5a7a;
     font-size: 14px;
     margin-top: 10px;
 }
 
-main .continue-watching .slider .card .text button {
+main section .slider .card .text button {
     width: 45px;
     height: 45px;
     padding: 15px;
@@ -383,10 +397,23 @@ main .continue-watching .slider .card .text button {
     background-color: #ee0018;
     margin-top: 16px;
     cursor: pointer;
+    pointer-events: all;
 }
 
-main .continue-watching .slider .card .text button svg {
+main section .slider .card .text button svg {
     fill: white;
+}
+
+main section .header .swiper-button-next,
+main section .header .swiper-button-prev
+{
+    float: right;
+    padding: 10px;
+    margin:0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ee0018;
+    color: white;
 }
 
 .trending-card {
@@ -407,8 +434,6 @@ main .continue-watching .slider .card .text button svg {
     height: 249px;
     position: relative;
 }
-
-
 
 .title-trend {
     color: white;
@@ -463,7 +488,6 @@ main .continue-watching .slider .card .text button svg {
 .rating i {
     color: #ffd043;
     font-size: 12px;
-
 }
 
 .rating p {
@@ -482,6 +506,7 @@ main .continue-watching .slider .card .text button svg {
     position: relative;
     margin-right: 5px;
     margin-left: 5px;
+    box-shadow: 4px 4px 10px #061441;
 }
 
 .card2:hover {
@@ -491,7 +516,6 @@ main .continue-watching .slider .card .text button svg {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
-
 
 #card2-h {
     font-size: 20px;
@@ -583,14 +607,12 @@ main .continue-watching .slider .card .text button svg {
     -o-transform: scale(1.05);
 }
 
-
 #scc {
     font-size: 12.5px;
 }
 
 .line {
     padding-top: 20px;
-
 }
 
 .line hr {
@@ -639,6 +661,13 @@ main .continue-watching .slider .card .text button svg {
     margin-top: 20px;
     height: 250px;
     width: 100%;
+    box-shadow: none;
+}
+
+.outline:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    width: 400px;
 }
 
 .second-sec .card2:hover {
@@ -693,7 +722,6 @@ main .continue-watching .slider .card .text button svg {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
@@ -707,4 +735,111 @@ main .continue-watching .slider .card .text button svg {
     position: absolute;
     left: 185px;
     /* right: -11px; */
+}
+
+@media (min-width:767px) and (max-width:1200px) {
+    main {
+        width: calc(100% - 180px);
+        padding-top: 30px;
+    }
+
+    .quick-start {
+        display: none;
+    }
+
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .trending-card .title-trend {
+        color: white;
+        font-size: 22px;
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    .sidebar section ul li a p {
+        font-weight: bold;
+        font-size: 10px;
+        color: #8aa0b7;
+    }
+
+    .left-side input {
+        padding: 10px;
+        padding-left: 60px;
+        outline: none;
+        border: 2.3px solid #c4ccdb;
+        border-radius: 20px;
+        height: 45px;
+        width: 304px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .sidebar .logo {
+        width: 107px;
+    }
+
+    .sidebar {
+        width: 120px;
+    }
+
+    .text-title .buttons .add {
+        height: 40px;
+        width: 43px;
+        font-size: 25px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        top: 195px;
+        right: 17px;
+        /* left: 150px; */
+    }
+
+
+    .home-films .container {
+        position: relative;
+        background: url(../media/film-2.jpeg);
+        background-blend-mode: darken;
+        background-size: cover;
+        width: calc(100% - 40px);
+        height: 460px;
+        border-radius: 40px;
+    }
+
+    main .continue-watching .slider .card .text .title {
+        color: #4f5a7a;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1313px) {
+    .trending-card .title-trend {
+        color: white;
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width :767px) and (max-width : 828px) {
+    .home-films .container .right {
+        position: absolute;
+        right: 17px;
+        left: 28px;
+        bottom: 40px;
+        display: flex;
+    }
+}
+
+main .swiper-container{
+    left: 0;
 }
