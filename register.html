@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="">
 
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,7 +23,7 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 
-<body class="body-login">
+<body class="body-sign">
 
     <div id="preloader" class="preloader">
         <div class='inner'>
@@ -38,21 +40,21 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <div class="fxt-column-wrap justify-content-between">
+
                         <div class="fxt-transformX-L-50 fxt-transition-delay-3">
                             <a href="index.html" class="fxt-logo"><img src="media/logo-34.png" alt="Logo"></a>
                         </div>
                         <div class="fxt-transformX-L-50 fxt-transition-delay-5">
                             <div class="fxt-middle-content">
-                                <h1 class="fxt-main-title">Unlimited movies, TV shows, and more.
-                                </h1>
-                                <div class="fxt-switcher-description1">If you don’t have an account You can<a href="register.html" class="fxt-switcher-text ms-2">Sign Up</a></div>
+                                <h1 class="fxt-main-title">Sign In to Rechage Direct</h1>
+                                <div class="fxt-switcher-description1">If you have an account You can<a href="index.html" class="fxt-switcher-text ms-2">Sign In</a></div>
                             </div>
                         </div>
                         <div class="fxt-transformX-L-50 fxt-transition-delay-7">
                             <div class="fxt-qr-code">
-                                <img src="media/elements/qr-login-34.png" alt="QR">
+                                <img src="media/elements/qr-register-34.png" alt="QR">
                             </div>
                         </div>
                     </div>
@@ -60,22 +62,36 @@
                 <div class="col-lg-4">
                     <div class="fxt-column-wrap justify-content-center">
                         <div class="fxt-form">
-                            <form id="myForm">
+                            <form id="myForm2">
                                 <div class="form-group">
-                                    <input type="email" id="email" class="form-control" name="email" placeholder="Enter Email or Mobile Number" required="required">
+                                    <input type="text" id="f_name" class="form-control" name="f_name" placeholder="Fast Name" required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input id="password" type="password" class="form-control" name="password" placeholder="********" required="required">
-                                    <i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+                                    <input type="text" id="l_name" class="form-control" name="l_name" placeholder="Last Name" required="required">
                                 </div>
                                 <div class="form-group">
-                                    <div class="fxt-switcher-description2 text-right">
-                                        <a href="forgot-password.html" class="fxt-switcher-text">Recovery Password</a>
+                                    <input type="email" id="email2" class="form-control" name="email" placeholder="E-mail Address" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="img1" class="form-control" name="img" placeholder="Personal Image URL" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input id="password2" type="password" class="form-control" name="password" placeholder="********" required="required">
+                                    <i toggle="#password2" class="fa fa-fw fa-eye toggle-password field-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <div class="fxt-checkbox-box">
+                                        <input id="checkbox1" type="checkbox" required>
+                                        <label for="checkbox1" class="ps-4">I agree with <a
+                                        class="terms-link" href="#">Terms</a> and <a class="terms-link" href="#">Privacy Policy</a></label>
                                     </div>
                                 </div>
+
                                 <div class="form-group">
-                                    <button type="submit" class="fxt-btn-fill">Sign In</button>
+                                    <button type="submit" class="fxt-btn-fill">Sign Up</button>
                                 </div>
+
+
                             </form>
                         </div>
                         <div class="fxt-style-line">
@@ -103,10 +119,12 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <!-- Validator js -->
     <script src="js/validator.min.js"></script>
-    <!-- Custom Js -->
-    <script src="js/login.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src="js/login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase.js"></script>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
@@ -114,48 +132,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase.js"></script>
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>
-    <script>
-        firebase
-            .auth()
-            .onAuthStateChanged(function(user) {
-                if (user) {
 
-                    var user = firebase
-                        .auth()
-                        .currentUser;
 
-                    if (user != null) {
-
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Login Successfuly!',
-                            html: 'you will automatically Redirect after <b></b> milliseconds.',
-                            timer: 2000,
-                            timerProgressBar: true,
-                            didOpen: () => {
-                                Swal.showLoading()
-                                const b = Swal.getHtmlContainer().querySelector('b')
-                                timerInterval = setInterval(() => {
-                                    b.textContent = Swal.getTimerLeft()
-                                }, 100)
-                            },
-                            willClose: () => {
-                                window.location = 'home.html'
-                            }
-                        }).then((result) => {
-                            /* Read more about handling dismissals below */
-                            if (result.dismiss === Swal.DismissReason.timer) {
-                                console.log('I was closed by the timer')
-                            }
-                        })
-
-                    }
-
-                }
-            });
-    </script>
 </body>
-
-
 
 </html>
