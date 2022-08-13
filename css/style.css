@@ -161,7 +161,8 @@ header .profile {
 }
 
 header .profile img {
-    width: 56px;
+    max-width: 56px;
+    min-width: 56px;
     clip-path: circle();
     margin: 3px 23px 0 15px;
 }
