@@ -10,6 +10,7 @@
 body {
     display: flex;
     background-size: cover;
+    background-color: #1c2b54;
     overflow: hidden;
     background-position: center;
 }
@@ -24,7 +25,7 @@ ul {
 
 main {
     width: calc(100% - 159px);
-    border-left: 1px solid #e4e8f1;
+    border-left: 1px solid #1e367b;
     border-top-left-radius: 25px;
     border-top-right-radius: 0px;
     height: 100vh;
@@ -39,12 +40,16 @@ main {
 }
 
 .sidebar {
-    width: 159px;
-    margin: 40px;
+    width: 250px;
 }
 
 .sidebar .logo {
     width: 140px;
+    margin: 30px;
+}
+
+.main-title {
+    padding: 10px 25px 10px 15px
 }
 
 .sidebar section {
@@ -62,7 +67,7 @@ main {
 
 .sidebar section ul li a p {
     font-weight: bold;
-    color: #8aa0b7;
+    color: #294c8c;
 }
 
 .sidebar section ul li a {
@@ -72,11 +77,15 @@ main {
 }
 
 .sidebar section ul svg {
-    fill: #8aa0b7;
+    fill: #294c8c;
     height: 40px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+ul li {
+    padding: 12px 5px 12px 15px;
 }
 
 .sidebar section ul p {
@@ -85,18 +94,29 @@ main {
     vertical-align: middle;
 }
 
+#active {
+    background-color: #223668;
+    border-left: 3px solid #32d59e;
+}
+
+.asides {
+    background-color: #162043;
+}
+
 .sidebar section ul li:hover p,
 #active p {
-    color: #4b5c6b;
+    color: #9abbce;
 }
 
 .sidebar section ul li:hover svg,
 #active svg {
-    fill: #006eff;
+    fill: #9abbce;
 }
 
 .quick-start {
     width: 340px;
+    position: sticky;
+    top: 20px;
     margin: 16px;
 }
 
@@ -105,11 +125,11 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #00266f;
+    background-color: #294c8c;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color: #2970fe;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -671,7 +691,7 @@ main .container {
     }
     main {
         width: calc(100% - 159px);
-        border-left: 1px solid #e4e8f1;
+        border-left: 1px solid #1e367b;
         border-top-left-radius: 25px;
         border-top-right-radius: 0px;
         height: 180vh;
@@ -710,7 +730,7 @@ main .container {
     }
     main {
         width: calc(100% - 159px);
-        border-left: 1px solid #e4e8f1;
+        border-left: 1px solid #1e367b;
         border-top-left-radius: 25px;
         border-top-right-radius: 0px;
         height: 144vh;

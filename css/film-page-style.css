@@ -19,7 +19,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     background-position: center;
-    background-color: #0b1117;
+    background-color: #1c2b54;
     color: white;
 }
 
@@ -38,23 +38,21 @@ ul {
     margin-right: 50px;
 }
 
-.sidebar section ul li a p {
-    display: none;
-}
-
 .sidebar {
-    width: 118px;
-    height: 100vh;
-    padding: 40px;
-    background-color: #090e13;
+    width: 250px;
 }
 
 .sidebar .logo {
-    width: 44px;
+    width: 140px;
+    margin: 30px;
+}
+
+.main-title {
+    padding: 10px 25px 10px 15px
 }
 
 .sidebar section {
-    padding: 30px 0;
+    margin: 30px 0;
 }
 
 .sidebar section p {
@@ -68,7 +66,7 @@ ul {
 
 .sidebar section ul li a p {
     font-weight: bold;
-    color: #8aa0b7;
+    color: var(--iq-title-text);
 }
 
 .sidebar section ul li a {
@@ -78,11 +76,15 @@ ul {
 }
 
 .sidebar section ul svg {
-    fill: #8aa0b7;
+    fill: var(--iq-title-text);
     height: 40px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+ul li {
+    padding: 12px 5px 12px 15px;
 }
 
 .sidebar section ul p {
@@ -91,19 +93,47 @@ ul {
     vertical-align: middle;
 }
 
+#active {
+    background-color: #223668;
+    border-left: 3px solid #32d59e;
+}
+
+.asides {
+    background-color: #162043;
+}
+
 .sidebar section ul li:hover p,
 #active p {
-    color: #4b5c6b;
+    color: #9abbce;
 }
 
 .sidebar section ul li:hover svg,
 #active svg {
-    fill: #006eff;
+    fill: #9abbce;
 }
 
 .quick-start {
     width: 340px;
+    position: sticky;
+    top: 20px;
     margin: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--iq-title-text);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2970fe;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 main {
@@ -119,7 +149,7 @@ main {
     -moz-box-shadow: 0px 6px 5px rgb(0, 0, 0);
     -webkit-box-shadow: 0px 6px 5px rgb(0, 0, 0);
     box-shadow: 0px 6px 5px rgb(0, 0, 0);
-    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(media/venom-2-8k-ux-1366x768.jpg);
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(../media/venom-2-8k-ux-1366x768.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
