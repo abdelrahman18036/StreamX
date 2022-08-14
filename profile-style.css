@@ -108,11 +108,11 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #8aa0b7;
+    background-color: #00266f;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -507,7 +507,7 @@ main .container {
 
     .stats .stats-cont .img-cont2 img {
         width: 78px;
-        height: 94px;
+        height: 99px;
         margin-left: 10px;
         margin-bottom: 10px;
         border-radius: 10px;
