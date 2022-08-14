@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #3551a4;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    background-size: cover;
+    overflow-x: hidden;
+    background-position: center;
+    background-color: #0b1117;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.sidebar section ul li a p {
+    display: none;
+}
+
+.sidebar {
+    width: 118px;
+    height: 100vh;
+    padding: 40px;
+    background-color: #090e13;
+}
+
+.sidebar .logo {
+    width: 44px;
+}
+
+.sidebar section {
+    padding: 30px 0;
+}
+
+.sidebar section p {
+    color: #b0c1cf;
+    font-size: 14px;
+}
+
+.sidebar section ul {
+    margin-top: 22px;
+}
+
+.sidebar section ul li a p {
+    font-weight: bold;
+    color: #8aa0b7;
+}
+
+.sidebar section ul li a {
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+}
+
+.sidebar section ul svg {
+    fill: #8aa0b7;
+    height: 40px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar section ul p {
+    display: table-cell;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.sidebar section ul li:hover p,
+#active p {
+    color: #4b5c6b;
+}
+
+.sidebar section ul li:hover svg,
+#active svg {
+    fill: #006eff;
+}
+
+.quick-start {
+    width: 340px;
+    margin: 16px;
+}
+
+
+main {
+    width: calc(100% - 118px);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.cover {
+    width: 100%;
+    height: 48vh;
+    border-bottom-left-radius: 30px;
+    -moz-box-shadow: 0px 6px 5px rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 6px 5px rgb(0, 0, 0);
+    box-shadow: 0px 6px 5px rgb(0, 0, 0);
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(/media/venom-2-8k-ux-1366x768.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 30px;
+}
+
+.top-side .container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-side .container .top-left-side {
+    display: flex;
+    color: white;
+    width: 245px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.top-right-side button {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 7px 22px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.top-right-side button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.film-name {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.back-button {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid gray;
+    width: 32px;
+    height: 32px;
+}
+
+.back-button:hover {
+    background-color: white;
+    border-color: transparent;
+}
+
+.back-button i {
+    color: white;
+    margin-left: 7px;
+    margin-top: 6px;
+}
+
+.back-button:hover>i {
+    color: black;
+}
+
+.circle-rating {
+    width: fit-content;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #5079ff;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.circle-rating p {
+    padding: 10px;
+}
+
+.trailer-button {
+    width: 182px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+}
+
+.trailer-button:hover.trailer-button .trailer-button-cont p {
+    color: black;
+
+}
+
+.trailer-button:hover.trailer-button {
+    background-color: white;
+}
+
+
+.trailer-button-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 102px;
+    margin-left: 23px;
+    color: white;
+}
+
+.trailer-button-cont p {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Couture', sans-serif;
+}
+
+.trailer-button-cont i {
+    color: #5079ff;
+
+}
+
+.bottom-side .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 53px;
+}
+
+.circle3 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: gray;
+    border-color: transparent;
+}
+
+#activep {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    background-color: white;
+}
+
+.left-side {
+    margin-top: 11px;
+    border-right: 1.5px solid #252a3a;
+    width: 75%;
+    height: 50vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #001a4a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #586383;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.card-film img {
+    width: 142px;
+    height: 180px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.left-container .container {
+    display: flex;
+    padding-top: 50px;
+}
+
+.title-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+
+.tags {
+
+    font-size: 18px;
+}
+
+
+.tag-btn {
+    font-family: 'Couture', sans-serif;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #7681aa;
+    font-size: 9px;
+    color: #7681aa;
+}
+
+.tag-btn:hover {
+    background-color: #7681aa;
+    color: black;
+}
+
+.tags h1 {
+    font-size: 30px;
+}
+
+.buttons2 .circle-button {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 50px;
+    height: 49px;
+    background-color: transparent;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+
+.buttons2 .circle-button:hover {
+    border: 2px solid #ff6767;
+}
+
+.buttons2 #share:hover {
+    border: 2px solid #5079ff;
+}
+
+.buttons2 #info:hover {
+    border: 2px solid #ffffff;
+}
+
+.buttons2 .circle-button:hover i {
+    color: #ff6767;
+
+}
+
+.buttons2 #info:hover i {
+    color: white;
+}
+
+.buttons2 #share:hover i {
+    color: #5079ff;
+}
+
+.buttons2 button {
+    background-color: #5079ff;
+    border: none;
+}
+
+.buttons2 button:hover i {
+    color: #000000;
+}
+
+.buttons2 button i {
+    color: white;
+}
+
+.left-side{
+    overflow-y:scroll;
+}
+
+.left-side .left-bottom .story-title{
+    font-weight: bold;
+}
+
+.left-side .left-bottom .container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-bottom .story-line{
+    width: 60%;
+}
+
+.left-side .left-bottom .story-dis{
+    color: #505a79;
+    margin-top: 35px;
+}
+
+.left-bottom .cast-title{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.left-bottom .cast .cast-card{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.left-bottom .cast .cast-card img{
+    object-fit: cover;
+    clip-path: circle();
+    width: 70px;
+    height: 70px;
+}
+
+.left-bottom .cast .cast-card a{
+    margin-left: 15px;
+}
+
+.main-container{
+    display: flex;
+}
+
+.film-card{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.film-card img{
+    width: 90px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.right-side .container{
+    margin-top: 50px;
+
+}
+
+.right-side .container h1{
+    font-size: 19px;
+}
+
+.right-side .container .film-card{
+    margin-top: 30px;
+}
+
+.film-card .text{
+    margin-left: 20px;
+}
+
+.film-card .text p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.film-card .text .rate{
+    margin-top: 15px;
+    display: flex;
+}
+
+.film-card .text .rate .inner{
+    margin-left: 20px;
+    color: #586383;
+}
+
+.right-side{
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+@media (max-width: 1200px){
+    .container{
+        margin: 0 20px
+    }
+
+    .card-film img{
+        height: 140px;
+        width: 100px;
+    }
+    .title-cont {
+        justify-content: normal;
+    }
+    .title-cont .tags h1{
+        font-size: 22px;
+    }
+    .title-cont .buttons1{
+        margin-top: 10px;
+    }
+    .title-cont .buttons2{
+        margin-top: 10px;
+    }
+    .title-cont .trailer-button-cont{
+        justify-content: normal;
+        align-items: center;
+    } 
+    .trailer-button i{
+        margin-right: 15px;
+    }
+    .title-cont .buttons2 .trailer-button{
+        width: 130px;
+        height: 35px;
+    }
+    .title-cont .buttons2 .circle-button{
+        width: 37px;
+        height: 37px;
+    }
+    .title-cont .buttons1 button{
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 1080px){
+    .left-bottom .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-bottom .container .story-line{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    .main-container{
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 50vh;
+    }
+    .left-side{
+        width: 100%;
+        height: auto;
+        overflow-y:initial;
+    }
+    .right-side{
+        overflow-y: initial;
+    }
+}
+
