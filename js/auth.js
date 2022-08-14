@@ -27,7 +27,12 @@ function login() {
                     }, 100)
                 },
                 willClose: () => {
-                    window.location = 'home.html'
+                    if (screen.availWidth < 768) {
+                        window.location = 'mob/mob.html'
+
+                    } else {
+                        window.location = 'home.html'
+                    }
                 }
             }).then((result) => {
                 /* Read more about handling dismissals below */
@@ -116,7 +121,12 @@ function gmail() {
                     }, 100)
                 },
                 willClose: () => {
-                    window.location = 'home.html'
+                    if (screen.availWidth < 768) {
+                        window.location = 'mob/mob.html'
+
+                    } else {
+                        window.location = 'home.html'
+                    }
                 }
             }).then((result) => {
                 /* Read more about handling dismissals below */
@@ -174,7 +184,12 @@ function apple() {
                     }, 100)
                 },
                 willClose: () => {
-                    window.location = 'home.html'
+                    if (screen.availWidth < 768) {
+                        window.location = 'mob/mob.html'
+
+                    } else {
+                        window.location = 'home.html'
+                    }
                 }
             }).then((result) => {
                 /* Read more about handling dismissals below */
@@ -295,7 +310,12 @@ function success() {
             }, 100)
         },
         willClose: () => {
-            window.location = 'home.html'
+            if (screen.availWidth < 768) {
+                window.location = 'mob/mob.html'
+
+            } else {
+                window.location = 'home.html'
+            }
         }
     }).then((result) => {
         /* Read more about handling dismissals below */

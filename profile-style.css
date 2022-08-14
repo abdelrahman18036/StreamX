@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.2s;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 body {
@@ -38,7 +36,6 @@ main {
     padding-right: 5px;
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
 .sidebar {
@@ -124,7 +121,7 @@ header {
     height: 30vh;
     border-top-left-radius: 25px;
     border-top-right-radius: 0px;
-    background: linear-gradient(to top, #010e2b, rgba(255, 255, 255, 0.137)), url(/media/b_w_mountain_black_nature_beauty_white_4608x2592.jpg);
+    background: linear-gradient(to top, #010e2b, rgba(255, 255, 255, 0.137)), url(media/b_w_mountain_black_nature_beauty_white_4608x2592.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -208,7 +205,6 @@ header {
 
 .right-side ul li:hover a {
     color: white;
-
 }
 
 header .container {
@@ -334,7 +330,6 @@ main .container {
     margin-top: 30px;
     display: flex;
     align-items: center;
-
 }
 
 .continue-watch .card2-container img {
@@ -467,14 +462,12 @@ main .container {
         height: 159px;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img1 {
         width: 151px;
         height: 207px;
         object-fit: cover;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img-cont2 img {
         width: 78px;
         height: 94px;
@@ -482,29 +475,24 @@ main .container {
         margin-bottom: 10px;
         border-radius: 10px;
     }
-
     .right-side ul {
         display: flex;
         padding-right: 50px;
     }
-
 }
 
 @media (min-width: 1153px) and (max-width:1259.9px) {
-
     .continue-watch .card img {
         width: 114px;
         height: 159px;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img1 {
         width: 151px;
         height: 207px;
         object-fit: cover;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img-cont2 img {
         width: 78px;
         height: 99px;
@@ -512,7 +500,6 @@ main .container {
         margin-bottom: 10px;
         border-radius: 10px;
     }
-
     .statics {
         display: flex;
         align-items: flex-start;
@@ -520,37 +507,30 @@ main .container {
         margin-left: 50px;
         /* padding-right: 30px; */
         flex-direction: column;
-
     }
-
     .stats .stats-cont {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .right-side ul {
         display: flex;
         padding-right: 50px;
     }
-
 }
 
 @media (min-width: 1104px) and (max-width:1152.9px) {
-
     .continue-watch .card img {
         width: 114px;
         height: 159px;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img1 {
         width: 151px;
         height: 207px;
         object-fit: cover;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img-cont2 img {
         width: 78px;
         height: 94px;
@@ -558,7 +538,6 @@ main .container {
         margin-bottom: 10px;
         border-radius: 10px;
     }
-
     .statics {
         display: flex;
         align-items: flex-start;
@@ -566,20 +545,16 @@ main .container {
         margin-left: 50px;
         /* padding-right: 30px; */
         flex-direction: column;
-
     }
-
     .stats .stats-cont {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .right-side ul {
         display: flex;
         padding-right: 50px;
     }
-
     .stats .stats-cont .img-cont2 img {
         width: 78px;
         height: 102px;
@@ -587,14 +562,12 @@ main .container {
         margin-bottom: 4px;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img1 {
         width: 118px;
         height: 207px;
         object-fit: cover;
         border-radius: 10px;
     }
-
     .main .stats .header {
         display: flex;
         justify-content: space-between;
@@ -608,14 +581,12 @@ main .container {
         height: 159px;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img1 {
         width: 151px;
         height: 207px;
         object-fit: cover;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img-cont2 img {
         width: 78px;
         height: 94px;
@@ -623,7 +594,6 @@ main .container {
         margin-bottom: 10px;
         border-radius: 10px;
     }
-
     .statics {
         display: flex;
         align-items: flex-start;
@@ -631,14 +601,11 @@ main .container {
         margin: 0;
         /* padding-right: 30px; */
         flex-direction: column;
-
     }
-
     .right-side ul {
         display: flex;
         padding-right: 50px;
     }
-
     .stats .stats-cont .img-cont2 img {
         width: 90px;
         height: 103px;
@@ -646,20 +613,17 @@ main .container {
         margin-bottom: 4px;
         border-radius: 10px;
     }
-
     .stats .stats-cont .img1 {
         width: 161px;
         height: 214px;
         object-fit: cover;
         border-radius: 10px;
     }
-
     .main .stats .header {
         display: flex;
         justify-content: space-between;
         width: 92%;
     }
-
     .statics {
         display: flex;
         align-items: flex-start;
@@ -667,13 +631,11 @@ main .container {
         margin-left: 50px;
         flex-direction: row;
     }
-
     .left-cont .title p {
         font-size: 26px;
         color: white;
         font-weight: 700;
     }
-
     .left-cont {
         display: flex;
         flex-direction: column;
@@ -681,12 +643,10 @@ main .container {
         bottom: 63px;
         left: 237px;
     }
-
     .right-side ul {
         display: flex;
         padding-right: 36px;
     }
-
     .profile {
         width: 170px;
         height: 171px;
@@ -700,18 +660,15 @@ main .container {
         box-shadow: 0px 6px 5px rgb(0 0 0 / 37%);
         margin: 20px 20px 20px 0;
     }
-
     .right-side ul li a {
         text-decoration: none;
         color: #515c71;
         font-size: 12px;
     }
-
     .mail {
         display: flex;
         margin-top: 7px;
     }
-
     main {
         width: calc(100% - 159px);
         border-left: 1px solid #e4e8f1;
@@ -720,12 +677,10 @@ main .container {
         height: 180vh;
         background: linear-gradient(to right, #082c7c, #1f53c4);
     }
-
     body {
         overflow: scroll;
         overflow-x: hidden;
     }
-
     .main .container {
         margin-top: 60px;
         margin-left: 40px;
@@ -735,7 +690,6 @@ main .container {
         flex-direction: column;
         height: 130vh;
     }
-
     .main hr {
         width: 500px;
         border: none;
@@ -747,7 +701,6 @@ main .container {
         background-color: white;
         height: 2px;
     }
-
     .stats .stats-cont {
         display: flex;
         justify-content: space-between;
@@ -755,7 +708,6 @@ main .container {
         /* margin-left: 3px; */
         /* flex-direction: column; */
     }
-
     main {
         width: calc(100% - 159px);
         border-left: 1px solid #e4e8f1;
@@ -764,7 +716,6 @@ main .container {
         height: 144vh;
         background: linear-gradient(to right, #082c7c, #1f53c4);
     }
-
     .main .container {
         margin-top: 60px;
         margin-left: 40px;
@@ -781,7 +732,6 @@ main .container {
         width: 95%;
         margin-left: 40px;
     }
-
     .stats-cont .statics span {
         color: white;
         font-size: 55px;

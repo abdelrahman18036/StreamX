@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #3551a4;
     font-weight: bold;
@@ -32,13 +31,11 @@ ul {
     list-style: none;
 }
 
-
 .container {
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
 .sidebar section ul li a p {
@@ -109,7 +106,6 @@ ul {
     margin: 16px;
 }
 
-
 main {
     width: calc(100% - 118px);
     height: 100vh;
@@ -123,7 +119,7 @@ main {
     -moz-box-shadow: 0px 6px 5px rgb(0, 0, 0);
     -webkit-box-shadow: 0px 6px 5px rgb(0, 0, 0);
     box-shadow: 0px 6px 5px rgb(0, 0, 0);
-    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(/media/venom-2-8k-ux-1366x768.jpg);
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(media/venom-2-8k-ux-1366x768.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -145,7 +141,6 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .top-right-side button {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -224,18 +219,15 @@ main {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-
 }
 
 .trailer-button:hover.trailer-button .trailer-button-cont p {
     color: black;
-
 }
 
 .trailer-button:hover.trailer-button {
     background-color: white;
 }
-
 
 .trailer-button-cont {
     display: flex;
@@ -255,7 +247,6 @@ main {
 
 .trailer-button-cont i {
     color: #5079ff;
-
 }
 
 .bottom-side .container {
@@ -316,7 +307,6 @@ main {
     -o-border-radius: 5px;
 }
 
-
 .card-film img {
     width: 142px;
     height: 180px;
@@ -340,13 +330,9 @@ main {
     padding-bottom: 5px;
 }
 
-
-
 .tags {
-
     font-size: 18px;
 }
-
 
 .tag-btn {
     font-family: 'Couture', sans-serif;
@@ -400,7 +386,6 @@ main {
 
 .buttons2 .circle-button:hover i {
     color: #ff6767;
-
 }
 
 .buttons2 #info:hover i {
@@ -424,168 +409,165 @@ main {
     color: white;
 }
 
-.left-side{
-    overflow-y:scroll;
+.left-side {
+    overflow-y: scroll;
 }
 
-.left-side .left-bottom .story-title{
+.left-side .left-bottom .story-title {
     font-weight: bold;
 }
 
-.left-side .left-bottom .container{
+.left-side .left-bottom .container {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.left-bottom .story-line{
+.left-bottom .story-line {
     width: 60%;
 }
 
-.left-side .left-bottom .story-dis{
+.left-side .left-bottom .story-dis {
     color: #505a79;
     margin-top: 35px;
 }
 
-.left-bottom .cast-title{
+.left-bottom .cast-title {
     font-weight: bold;
     padding-bottom: 20px;
 }
 
-.left-bottom .cast .cast-card{
+.left-bottom .cast .cast-card {
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
 
-.left-bottom .cast .cast-card img{
+.left-bottom .cast .cast-card img {
     object-fit: cover;
     clip-path: circle();
     width: 70px;
     height: 70px;
 }
 
-.left-bottom .cast .cast-card a{
+.left-bottom .cast .cast-card a {
     margin-left: 15px;
 }
 
-.main-container{
+.main-container {
     display: flex;
 }
 
-.film-card{
+.film-card {
     display: flex;
     margin-bottom: 20px;
 }
 
-.film-card img{
+.film-card img {
     width: 90px;
     height: 120px;
     border-radius: 10px;
 }
 
-.right-side .container{
+.right-side .container {
     margin-top: 50px;
-
 }
 
-.right-side .container h1{
+.right-side .container h1 {
     font-size: 19px;
 }
 
-.right-side .container .film-card{
+.right-side .container .film-card {
     margin-top: 30px;
 }
 
-.film-card .text{
+.film-card .text {
     margin-left: 20px;
 }
 
-.film-card .text p{
+.film-card .text p {
     font-size: 17px;
     font-weight: bold;
 }
 
-.film-card .text .rate{
+.film-card .text .rate {
     margin-top: 15px;
     display: flex;
 }
 
-.film-card .text .rate .inner{
+.film-card .text .rate .inner {
     margin-left: 20px;
     color: #586383;
 }
 
-.right-side{
+.right-side {
     overflow-y: scroll;
     height: 50vh;
 }
 
-@media (max-width: 1200px){
-    .container{
+@media (max-width: 1200px) {
+    .container {
         margin: 0 20px
     }
-
-    .card-film img{
+    .card-film img {
         height: 140px;
         width: 100px;
     }
     .title-cont {
         justify-content: normal;
     }
-    .title-cont .tags h1{
+    .title-cont .tags h1 {
         font-size: 22px;
     }
-    .title-cont .buttons1{
+    .title-cont .buttons1 {
         margin-top: 10px;
     }
-    .title-cont .buttons2{
+    .title-cont .buttons2 {
         margin-top: 10px;
     }
-    .title-cont .trailer-button-cont{
+    .title-cont .trailer-button-cont {
         justify-content: normal;
         align-items: center;
-    } 
-    .trailer-button i{
+    }
+    .trailer-button i {
         margin-right: 15px;
     }
-    .title-cont .buttons2 .trailer-button{
+    .title-cont .buttons2 .trailer-button {
         width: 130px;
         height: 35px;
     }
-    .title-cont .buttons2 .circle-button{
+    .title-cont .buttons2 .circle-button {
         width: 37px;
         height: 37px;
     }
-    .title-cont .buttons1 button{
+    .title-cont .buttons1 button {
         transform: scale(0.85);
     }
 }
 
-@media (max-width: 1080px){
-    .left-bottom .container{
+@media (max-width: 1080px) {
+    .left-bottom .container {
         flex-direction: column;
         justify-content: center;
     }
-    .left-bottom .container .story-line{
+    .left-bottom .container .story-line {
         width: 100%;
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 920px) {
-    .main-container{
+    .main-container {
         flex-direction: column;
         overflow-y: scroll;
         height: 50vh;
     }
-    .left-side{
+    .left-side {
         width: 100%;
         height: auto;
-        overflow-y:initial;
+        overflow-y: initial;
     }
-    .right-side{
+    .right-side {
         overflow-y: initial;
     }
 }
-
