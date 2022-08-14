@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.2s;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 body {
@@ -38,7 +36,6 @@ main {
     padding-right: 5px;
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
 .sidebar {
@@ -65,7 +62,7 @@ main {
 
 .sidebar section ul li a p {
     font-weight: bold;
-    color: #8aa0b7;
+    color: var(--iq-title-text);
 }
 
 .sidebar section ul li a {
@@ -75,7 +72,7 @@ main {
 }
 
 .sidebar section ul svg {
-    fill: #8aa0b7;
+    fill: var(--iq-title-text);
     height: 40px;
     padding-right: 10px;
     padding-top: 10px;
@@ -90,7 +87,7 @@ main {
 
 .sidebar section ul li:hover p,
 #active p {
-    color: #4b5c6b;
+    color: var(--iq-title-active);
 }
 
 .sidebar section ul li:hover svg,
@@ -108,11 +105,11 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #8aa0b7;
+    background-color: var(--iq-title-text);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #2970fe;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -208,7 +205,6 @@ header {
 
 .right-side ul li:hover a {
     color: white;
-
 }
 
 header .container {
@@ -333,7 +329,6 @@ main .container {
     margin-top: 30px;
     display: flex;
     align-items: center;
-
 }
 
 .continue-watch .card2-container img {
@@ -394,7 +389,6 @@ main .container {
 .stats .stats-cont {
     display: flex;
     justify-content: space-between;
-
 }
 
 .stats .stats-cont .img-cont {
@@ -451,7 +445,6 @@ main .container {
     font-weight: 700;
     margin-right: 10px;
     padding-left: 50px;
-
 }
 
 .stats-cont .statics p {

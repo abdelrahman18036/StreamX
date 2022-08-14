@@ -1,4 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
+@import url("variable.css");
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +10,11 @@
 }
 
 body {
+    background-color: var(--iq-primary);
+}
+
+.three-sec {
     display: flex;
-    background-image: url(../media/background.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .clear {
@@ -25,8 +27,8 @@ ul {
 
 main {
     width: calc(100% - 550px);
-    border-left: 1px solid #e4e8f1;
-    border-right: 1px solid #e4e8f1;
+    border-left: 1px solid #1e367b;
+    border-right: 1px solid #1e367b;
     padding-top: 30px;
 }
 
@@ -39,11 +41,15 @@ main {
 
 .sidebar {
     width: 250px;
-    margin: 40px;
 }
 
 .sidebar .logo {
     width: 140px;
+    margin: 30px;
+}
+
+.main-title {
+    padding: 10px 25px 10px 15px
 }
 
 .sidebar section {
@@ -61,7 +67,7 @@ main {
 
 .sidebar section ul li a p {
     font-weight: bold;
-    color: #8aa0b7;
+    color: var(--iq-title-text);
 }
 
 .sidebar section ul li a {
@@ -71,11 +77,15 @@ main {
 }
 
 .sidebar section ul svg {
-    fill: #8aa0b7;
+    fill: var(--iq-title-text);
     height: 40px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+ul li {
+    padding: 12px 5px 12px 15px;
 }
 
 .sidebar section ul p {
@@ -84,18 +94,25 @@ main {
     vertical-align: middle;
 }
 
+#active {
+    background-color: #223668;
+    border-left: 3px solid #32d59e;
+}
+
 .sidebar section ul li:hover p,
 #active p {
-    color: #4b5c6b;
+    color: var(--iq-title-active);
 }
 
 .sidebar section ul li:hover svg,
 #active svg {
-    fill: #E91E63;
+    fill: var(--iq-title-active);
 }
 
 .quick-start {
     width: 340px;
+    position: sticky;
+    top: 20px;
     margin: 16px;
 }
 
@@ -104,11 +121,11 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #8aa0b7;
+    background-color: var(--iq-title-text);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #2970fe;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -151,7 +168,7 @@ header .right-side {
 }
 
 header .right-side svg {
-    fill: #6b7887;
+    fill: #acc9e9;
     margin: 0 15px;
 }
 
@@ -169,13 +186,14 @@ header .profile img {
 
 header .profile .name {
     font-size: 12px;
+    color: #acc9e9;
     max-width: 80px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 header .profile .username {
-    color: #a5b7c6;
+    color: #849fca;
     font-size: 10px;
 }
 
@@ -187,10 +205,11 @@ header .profile .profile-photo .circle {
     width: 65px;
     height: 65px;
     position: absolute;
+    border: 5px solid#2970fe;
     left: 10px;
     top: -1px;
     border-radius: 50%;
-    border: 5px solid#E91E63;
+    border: 5px solidvar(--iq-title-active);
     border-left-color: transparent;
     animation-name: spin;
     animation-duration: 1s;
@@ -260,7 +279,7 @@ header .profile .profile-photo .circle {
 }
 
 .watch {
-    background-color: #eb0f6e;
+    background-color: #2970fe;
     font-size: 17px;
     width: 120px;
     height: 55px;
@@ -391,7 +410,7 @@ main section .slider .card .text button {
     padding: 15px;
     border: none;
     border-radius: 50%;
-    background-color: #ee0018;
+    background-color: #2970fe;
     margin-top: 16px;
     cursor: pointer;
     pointer-events: all;
@@ -408,7 +427,7 @@ main section .header .swiper-button-prev {
     margin: 0 5px;
     border: none;
     border-radius: 5px;
-    background-color: #ee0018;
+    background-color: #2970fe;
     color: white;
 }
 
@@ -502,7 +521,7 @@ main section .header .swiper-button-prev {
     position: relative;
     margin-right: 5px;
     margin-left: 5px;
-    box-shadow: 4px 4px 10px #061441;
+    box-shadow: 4px 4px 10px var(--iq-aside);
 }
 
 .card2:hover {
@@ -535,7 +554,7 @@ main section .header .swiper-button-prev {
     position: absolute;
     top: 200px;
     left: 20px;
-    background-color: rgb(206, 0, 0);
+    background-color: #2970fe;
     font-weight: 700;
 }
 
@@ -562,8 +581,9 @@ main section .header .swiper-button-prev {
 }
 
 .title-genre {
-    color: #8896a1;
+    color: #acc9e9;
     font-weight: 600;
+    margin-top: 24px;
 }
 
 .buttons-genre {
@@ -576,12 +596,16 @@ main section .header .swiper-button-prev {
     display: flex;
 }
 
+.header h1 {
+    color: #acc9e9;
+}
+
 .gen-button {
     display: flex;
     width: 120px;
     align-items: center;
     justify-content: space-around;
-    background-color: #E91E63;
+    background-color: #2970fe;
     color: white;
     height: 26px;
     font-size: 14px;
@@ -612,8 +636,8 @@ main section .header .swiper-button-prev {
 }
 
 .line hr {
-    height: 5px;
-    background-color: #3b4c5f;
+    height: 1px;
+    background-color: #2970fe;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -631,6 +655,7 @@ main section .header .swiper-button-prev {
 
 .recent-download h1 {
     font-weight: 800;
+    color: #acc9e9;
     transform: scaleY(1.1);
     -webkit-transform: scaleY(1.1);
     -moz-transform: scaleY(1.1);
@@ -639,7 +664,7 @@ main section .header .swiper-button-prev {
 }
 
 .recent-download p {
-    color: #8896a1;
+    color: #849fca;
     font-size: 13px;
     transform: scaleY(1.1);
     -webkit-transform: scaleY(1.1);
@@ -757,7 +782,7 @@ main section .header .swiper-button-prev {
     .sidebar section ul li a p {
         font-weight: bold;
         font-size: 10px;
-        color: #8aa0b7;
+        color: var(--iq-title-text);
     }
     .left-side input {
         padding: 10px;
@@ -825,4 +850,25 @@ main section .header .swiper-button-prev {
 
 main .swiper-container {
     left: 0;
+}
+
+.aside {
+    position: sticky;
+    top: 10px;
+}
+
+.asides {
+    background-color: var(--iq-aside);
+}
+
+.leftaside {
+    width: 250px;
+}
+
+.main-header {
+    margin-top: -30px;
+    background-color: #223668;
+    top: 0;
+    position: sticky;
+    z-index: 99999;
 }

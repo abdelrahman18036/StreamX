@@ -1,5 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
-
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +156,6 @@ header .right-side svg {
 header .profile {
     display: flex;
     align-items: center;
-
 }
 
 header .profile img {
@@ -200,11 +198,11 @@ header .profile .profile-photo .circle {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
+
 
 /* Section 2 */
 
@@ -214,8 +212,7 @@ header .profile .profile-photo .circle {
 
 .home-films .container {
     position: relative;
-    background:
-        url("../media/film-2.jpeg");
+    background: url("../media/film-2.jpeg");
     background-blend-mode: darken;
     background-size: cover;
     width: calc(100% - 100px);
@@ -227,7 +224,6 @@ header .profile .profile-photo .circle {
     font-size: 50px;
     font-family: 'Couture', sans-serif;
 }
-
 
 .home-films .container .left {
     position: absolute;
@@ -342,7 +338,6 @@ main .continue-watching .slider .card {
     overflow: hidden;
     background-color: white;
     position: relative;
-
 }
 
 main .continue-watching .slider .card:hover {
@@ -412,8 +407,6 @@ main .continue-watching .slider .card .text button svg {
     position: relative;
 }
 
-
-
 .title-trend {
     color: white;
     position: absolute;
@@ -467,7 +460,6 @@ main .continue-watching .slider .card .text button svg {
 .rating i {
     color: #ffd043;
     font-size: 12px;
-
 }
 
 .rating p {
@@ -495,7 +487,6 @@ main .continue-watching .slider .card .text button svg {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
-
 
 #card2-h {
     font-size: 20px;
@@ -589,14 +580,12 @@ main .continue-watching .slider .card .text button svg {
     -o-transform: scale(1.05);
 }
 
-
 #scc {
     font-size: 12.5px;
 }
 
 .line {
     padding-top: 20px;
-
 }
 
 .line hr {
@@ -705,7 +694,6 @@ main .continue-watching .slider .card .text button svg {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
