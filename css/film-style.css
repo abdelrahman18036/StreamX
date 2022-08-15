@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap%27');
+@import url(//db.onlinewebfonts.com/c/148643204e3f8c31c9b52602ab19d19e?family=COUTURE);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.main-theme{
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 57vh;
+    background-image:  
+    linear-gradient(to top,
+    rgb(24,24,36,1) ,
+    rgb(25,37,37,0.6) ,
+    rgb(27,27,39,0.6) ,
+    rgb(0,0,0,0.5) ,
+    rgb(0,0,0,0.4) ,
+    rgb(0,0,0,0.3) ,
+    rgb(0,0,0,0.2) ,
+    rgb(0,0,0,0)),
+    url(../images/film.jpg);
+     justify-content: center;
+     align-items: center;
+
+}
+
+.play-button a i{
+    color: #f93a44;
+}
+
+.cover{
+    height: 49vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating i{
+    color: #fed35a;
+}
+.rating {
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.info .rating i{
+    color: white;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 264px;
+
+}
+.info p{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.bottom-side .film-name{
+    font-family: "COUTURE";
+
+}
+
+.bottom-side .rating p{
+    font-size: 9px;
+}
+#hours{
+    padding-left: 4px;
+    font-size: 8.7px;
+}
+.bottom-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+
+}
+#star{
+    margin-bottom: 17px;
+}
+
+.story-line{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(24,24,36)  ;
+}
+.story-line .top-side{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.story-line .top-side .buttons i{
+    color: #f93a44;
+    padding-left: 10px;
+}
+
+.story-line .top-side .buttons{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 43px;
+
+}
+.top-side{
+    justify-content: space-between;
+}
+
+#about{
+    padding: 7px;
+    display: inline-block;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    direction: ltr;
+    margin-left: 36px;
+
+}
+
+
