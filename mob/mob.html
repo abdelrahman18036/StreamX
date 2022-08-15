@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="style-mob.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style-mob.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreamX</title>
 </head>
 
 <body>
+    <nav>
+        dgfhdhghfghfdhd
+    </nav>
     <header>
         <div class="container">
             <div class="left-side">
@@ -27,15 +31,30 @@
         <div class="title-home">
             <p>Upcoming Movies</p>
         </div>
-        <div class="card-systems" id="card-sys1">
-            <div class="card-mob" style=" background-image: url(media/FTe6Z_MVEAArAVK-1.jpg);background-position: center;
-            background-size: cover;">
-                <div class="card-info">
-                    <h4>Thor: Love & Thunder</h4>
-                    <p>Action | Sci-fi | Superhero</p>
+        <div class="card-systems swiper" id="card-sys1">
+            <div class="wrap swiper-wrapper">
+                <div class="card-mob swiper-slide" style=" background-image: url(media/FTe6Z_MVEAArAVK-1.jpg);background-position: center;
+                background-size: cover;">
+                    <div class="card-info">
+                        <h4>Thor: Love & Thunder</h4>
+                        <p>Action | Sci-fi | Superhero</p>
+                    </div>
+                </div>
+                <div class="card-mob swiper-slide" style=" background-image: url(media/FTe6Z_MVEAArAVK-1.jpg);background-position: center;
+                background-size: cover;">
+                    <div class="card-info">
+                        <h4>Thor: Love & Thunder</h4>
+                        <p>Action | Sci-fi | Superhero</p>
+                    </div>
+                </div>
+                <div class="card-mob swiper-slide" style=" background-image: url(media/FTe6Z_MVEAArAVK-1.jpg);background-position: center;
+                background-size: cover;">
+                    <div class="card-info">
+                        <h4>Thor: Love & Thunder</h4>
+                        <p>Action | Sci-fi | Superhero</p>
+                    </div>
                 </div>
             </div>
-            <img src="media/FTe6Z_MVEAArAVK-1.jpg" alt="">
         </div>
         <ul>
             <li><a href="">Trending</a></li>
@@ -44,27 +63,30 @@
             <li><a href="">Featured</a></li>
             <li><a href="">Action</a></li>
         </ul>
-        <div class="card-effect">
-            <div class="card-systems">
-                <div class="card-mob" id="card2" style=" background-image: url(media/Uncharted_movie_theatrical_poster.png);background-position: center ; background-size: cover; ">
+        <div class="card-effect swiper two">
+            <div class="card-systems swiper-wrapper">
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/Uncharted_movie_theatrical_poster.png);background-position: center ; background-size: cover; ">
                 </div>
-                <img src="media/Uncharted_movie_theatrical_poster.png" alt="">
-
-                <div class="card-mob" id="card3" style=" background-image: url(media/Mavrick-8ec04890-d2c1-11ec-b804-fdbd7a64c91d.jpg);background-position: center ; background-size: cover; ">
+                <img src="/media/Uncharted_movie_theatrical_poster.png" alt="">
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/Mavrick-8ec04890-d2c1-11ec-b804-fdbd7a64c91d.jpg);background-position: center ; background-size: cover; ">
                 </div>
-
-
-                <div class="card-mob" id="card4" style=" background-image: url(media/looper-movie-poster-9r-800x1280.jpg);background-position: center ; background-size: cover; ">
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/looper-movie-poster-9r-800x1280.jpg);background-position: center ; background-size: cover; ">
                 </div>
-
-
-                <div class="card-mob" id="card5" style=" background-image: url(media/detkt8p-0ab33297-831c-4a0a-83d7-0cf71a64c553.jpg);background-position:center; background-size: cover; ">
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/detkt8p-0ab33297-831c-4a0a-83d7-0cf71a64c553.jpg);background-position:center; background-size: cover; ">
                 </div>
-
-                <div class="card-mob" id="card6" style=" background-image: url(media/enola.jpg);background-position: center ; background-size: cover; ">
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/enola.jpg);background-position: center ; background-size: cover; ">
                 </div>
-
-
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/Mavrick-8ec04890-d2c1-11ec-b804-fdbd7a64c91d.jpg);background-position: center ; background-size: cover; ">
+                </div>
+                <div class="card-mob swiper-slide"
+                    style=" background-image: url(media/Uncharted_movie_theatrical_poster.png);background-position: center ; background-size: cover; ">
+                </div>
             </div>
         </div>
         <div class="card-system2">
@@ -180,5 +202,6 @@
     </div>
 
 </body>
-
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="js/main-mob.js"></script>
 </html>
