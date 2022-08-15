@@ -19,9 +19,6 @@
     padding-right: 5px;
     display: flex;
     margin: 0;
-    margin-left: 31px;
-    margin-right: 31px;
-    /* margin: auto; */
     justify-content: space-between;
 }
 
@@ -42,8 +39,8 @@
 
 
 .card3 img {
-    width: 90px;
-    height: 119px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -79,7 +76,7 @@ ul {
 }
 
 body {
-    background-image: url(../media/Untitled-1.png);
+    background-image: url(../media/Abstract-Wallpaper-Laptop-1536x864.jpg);
     color: white;
     background-position: center;
     background-size: cover;
@@ -208,6 +205,10 @@ header .container {
     animation-timing-function: linear;
 }
 
+.swiper-container{
+    margin: 0 35px;
+}
+
 @keyframes rotate-card {
     0% {
         transform: rotate(0deg);
@@ -264,76 +265,13 @@ header .container {
     height: 66vh;
 }
 
-#card2 {
-    width: 164px;
-    height: 241px;
-    margin-top: 30px;
-    position: absolute;
-    left: calc(50% - 82px);
-    /* margin-right: -82px; */
-    z-index: 7;
-}
-
-#card3 {
-    width: 164px;
-    height: 241px;
-    margin-top: 30px;
-    position: absolute;
-    left: calc(50% - -23px);
-    /* margin-right: -82px; */
-    z-index: 6;
-    transform: scale(0.9);
-}
-
-#card4 {
-    width: 164px;
-    height: 241px;
-    margin-top: 30px;
-    position: absolute;
-    left: calc(50% - -101px);
-    /* margin-right: -82px; */
-    z-index: 5;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-}
-
-#card5 {
-    width: 164px;
-    height: 241px;
-    margin-top: 30px;
-    position: absolute;
-    left: calc(50% - 210px);
-    /*margin-right: -82px;
-        */
-    z-index: 5;
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    z-index: 5;
-}
-
-#card6 {
-    width: 164px;
-    height: 241px;
-    margin-top: 30px;
-    position: absolute;
-    left: calc(50% - 271px);
-    /* margin-right: -82px; */
-    z-index: 4;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-}
 
 .card-systems .wrap{
     height: 280px;
+}
+
+.swiper-slide{
+    height: 130px;
 }
 
 @media (max-width:500px) {
@@ -352,14 +290,6 @@ header .container {
 
     ul {
         list-style: none;
-    }
-
-    body {
-        background-image: url(../media/Untitled-1.png);
-        color: white;
-        background-position: center;
-        background-size: cover;
-
     }
 
     .container {
@@ -533,82 +463,7 @@ header .container {
         height: 286px;
     }
 
-    #card2 {
-        width: 164px;
-        height: 241px;
-        margin-top: 30px;
-        position: absolute;
-        left: calc(50% - 82px);
-        /* margin-right: -82px; */
-        z-index: 7;
-    }
-
-    #card3 {
-        width: 164px;
-        height: 241px;
-        margin-top: 30px;
-        position: absolute;
-        left: calc(50% - -23px);
-        /* margin-right: -82px; */
-        z-index: 6;
-        transform: scale(0.9);
-    }
-
-    #card4 {
-        width: 164px;
-        height: 241px;
-        margin-top: 30px;
-        position: absolute;
-        left: calc(50% - -101px);
-        /* margin-right: -82px; */
-        z-index: 5;
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
-    }
-
-    #card5 {
-        width: 164px;
-        height: 241px;
-        margin-top: 30px;
-        position: absolute;
-        left: calc(50% - 210px);
-        /*margin-right: -82px;
-        */
-        z-index: 5;
-        transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -o-transform: scale(0.9);
-        z-index: 5;
-    }
-
-    #card6 {
-        width: 164px;
-        height: 241px;
-        margin-top: 30px;
-        position: absolute;
-        left: calc(50% - 271px);
-        /* margin-right: -82px; */
-        z-index: 4;
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
-    }
-
 }
-
-
-
-
-
-
-
 
 @media (max-width:500px) {
     .card-system2 {
@@ -622,9 +477,6 @@ header .container {
         padding-right: 5px;
         display: flex;
         margin: 0;
-        margin-left: 31px;
-        margin-right: 31px;
-        /* margin: auto; */
         justify-content: space-between;
     }
 
@@ -640,18 +492,6 @@ header .container {
         padding-right: 5px;
         margin-left: 25px;
         margin-right: 25px;
-    }
-
-
-
-    .card3 img {
-        width: 90px;
-        height: 119px;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
     }
 
     .glass-back {
@@ -676,10 +516,56 @@ header .container {
 
 /* //mob ends */
 
-nav{
+nav {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 10vh;
     display: fixed;
+    z-index: 9999;
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav .icon svg {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    fill: white;
+}
+
+nav div {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+#active:after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    height: 5px;
+    width: 5px;
+    left: calc(50% - 2.5px);
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition-duration: 0.5s;
 }

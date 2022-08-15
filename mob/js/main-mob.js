@@ -30,3 +30,12 @@ var filmsSwiper = new Swiper('.card-effect', {
   }
 
 });
+
+var trendSwiper = new Swiper(".swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 15,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
