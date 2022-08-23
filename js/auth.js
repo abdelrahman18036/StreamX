@@ -55,6 +55,9 @@ function login() {
 
 }
 
+
+
+
 firebase
     .auth()
     .onAuthStateChanged(function(user) {
