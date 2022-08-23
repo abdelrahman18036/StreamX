@@ -1,73 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-
-* {
+*{
     font-family: 'Oxygen', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Tajawal', sans-serif;
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
+    padding:0px;
 }
 
-body {
-    background: radial-gradient(ellipse at bottom, #2a0330 0%, #090a0f 100%);
-    background-position: center;
-    background-size: cover;
-    backdrop-filter: blur(3px);
+body{
+    background-color: #02044A;
     color: white;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100vh;
-    align-items: center;
-    flex-direction: column;
 }
-
 .left-section {
     display: flex;
     flex-direction: column;
     /* border: 3px solid white; */
-    /* margin-top: 100px; */
-    /* justify-content: center; */
-    margin-top: 24px;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 280px; */
+    margin-top: 50px;
+    width: 280px;
     height: 80vh;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
-}
+    animation: 2s ease-out 0s 1 slideInFromTOP;
 
-.left-section h2 {
+
+}
+.left-section h2 {  
     font-size: 42px;
-    text-align: center;
     font-weight: 800;
 }
 
-header p {
-    font-size: 17px;
-    text-align: center;
-}
 
 .left-section .info {
     display: flex;
-    /* flex-direction: column; */
-    /* margin-top: 80px; */
-    /* flex-grow: 0; */
+    flex-direction: column;
+    margin-top: 80px;
+    flex-grow: 0;
+
 }
 
 .left-section .info .inf {
     display: flex;
     align-items: center;
-    padding: 20px;
-    /* margin-top: 35px; */
+    margin-top: 35px;
     padding-left: 5px;
     height: 8vh;
-}
 
+
+
+}
 .left-section .info .inf:hover {
-    border: 2px solid #410efb;
+    border: 2px solid #0E75FB;
     border-radius: 5px;
     background-color: #030D59;
     transition: 0.2s;
@@ -83,16 +70,16 @@ header p {
 .left-section .social-media {
     display: flex;
     align-items: center;
-    /* margin-top: 77px; */
+    margin-top: 77px;
 }
 
-.left-section .social-media i {
+.left-section .social-media i{
     margin-right: 50px;
     font-size: 20px;
 }
 
 .left-section .social-media i:hover {
-    color: #0E75FB;
+    color:#0E75FB ;
     transition: 1s;
     cursor: pointer;
 }
@@ -101,25 +88,25 @@ header p {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
-    margin-top: 55px;
-    height: 60vh;
-    margin-bottom: 31px;
+    margin-top: 50px;
+    height: 80vh;
     width: 510px;
     color: black;
     background-color: white;
-    border-radius: 20px;
+    border-radius:20px;
     animation: 1s ease-out 0s 1 slideInFromTop;
-}
 
+
+}
 
 .right-section .enter-info {
     display: flex;
     flex-direction: column;
     margin-left: 37px;
     margin-top: 25px;
-    width: 404px;
-    height: 78%;
-    margin: auto;
+    width: 435px;
+
+
 }
 
 .right-section .enter-info input {
@@ -133,10 +120,10 @@ header p {
 
 
 
-.right-section .enter-info textarea {
+.right-section .enter-info textarea{
     border: none;
     background-color: #f5f5f9;
-    border-radius: 7px;
+    border-radius:7px;
     text-decoration: solid;
     resize: none;
     font-weight: 500;
@@ -146,11 +133,11 @@ header p {
 
 
 
-.input :focus {
+.input :focus{
     border: 1px solid blue;
 
 }
-
+    
 
 .right-section .enter-info label {
     margin-bottom: 15px;
@@ -160,8 +147,8 @@ header p {
 }
 
 #submit {
-    width: 17rem;
-    height: 8vh;
+    width: 15rem;
+    height: 7vh;
     border: none;
     background-color: RGB(12, 117, 255);
     border-radius: 5px;
@@ -170,42 +157,126 @@ header p {
     font-weight: 800;
     margin-left: 194px;
     margin-top: 20px;
-    margin: auto;
-    margin-top: 33px;
 }
 
 
-#submit:hover {
+#submit:hover{
     background-color: #02044A;
     transition: 0.7s;
     cursor: pointer;
 }
 
+
+@media(max-width: 420px){
+    
+    
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+    .left-section .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 77px;
+    }
+
+    #submit {
+        width: 15rem;
+        height: 7vh;
+        border: none;
+        background-color: RGB(12, 117, 255);
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        font-weight: 800;
+        margin-left: 25px;
+        margin-top: 19px;
+    }
+    
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        margin-top: 46px;
+        height: 66vh;
+        width: 332px;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+    .right-section .enter-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 29px;
+        margin-top: 24px;
+        width: 274px;
+        height: 427px;
+        padding-bottom: 12px;
+    }
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        /* border: 3px solid white; */
+        margin-top: 6px;
+        width: 280px;
+        height: 80vh;
+        animation: 2s ease-out 0s 1 slideInFromTop;
+    }
+    .right-section .enter-info textarea {
+        border: none;
+        background-color: #f5f5f9;
+        border-radius: 7px;
+        text-decoration: solid;
+        resize: none;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px;
+        height: 143px;
+    }
+
+    left-section .info {
+        display: flex;
+        flex-direction: column;
+        margin-top: -14px;
+        flex-grow: 0;
+    }
+
+    .left-section .info .inf {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        padding-left: 6px;
+        height: 8vh;
+    }
+   
+}
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
-    }
-
-    100% {
+      }
+      100% {
         transform: translateX(0);
-    }
+      }
 }
 
 
 @keyframes slideInFromTop {
     0% {
         transform: translateY(-100%);
-    }
+      }
+      
+      100% {
+        transform: translateY(0 );
+      }
 
-    100% {
-        transform: translateY(0);
-    }
-
-
+      
 }
 
-@media (max-width:500px) {
-    body {
-        background-color: red;
-    }
-}
