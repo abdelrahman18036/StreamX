@@ -8,50 +8,75 @@ function login() {
         .auth()
         .currentUser;
 
-    firebase
-        .auth()
-        .signInWithEmailAndPassword(userid, pass)
-        .then((userCredential) => {
-            let timerInterval
-            Swal.fire({
-                icon: 'success',
-                title: 'Login Successfuly!',
-                html: 'you will automatically Redirect after <b></b> milliseconds.',
-                timer: 2000,
-                timerProgressBar: true,
-                didOpen: () => {
-                    Swal.showLoading()
-                    const b = Swal.getHtmlContainer().querySelector('b')
-                    timerInterval = setInterval(() => {
-                        b.textContent = Swal.getTimerLeft()
-                    }, 100)
-                },
-                willClose: () => {
-                    if (screen.availWidth < 768) {
-                        window.location = 'mob/mob.html'
 
-                    } else {
-                        window.location = 'home.html'
-                    }
-                }
-            }).then((result) => {
-                /* Read more about handling dismissals below */
-                if (result.dismiss === Swal.DismissReason.timer) {
-                    console.log('I was closed by the timer')
-                }
-            })
+
+    if (userid == "admin@streamx.vercel.app" && pass == "00oo00oo") {
+        Swal.fire({
+            icon: 'success',
+            title: 'Login as Administrator Successfuly!',
+            html: 'you will automatically Redirect after <b></b> milliseconds.',
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                window.location = 'dashboard/index.html'
+            }
         })
-        .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: error.message,
-                footer: error.code
-            })
 
-        });
+    } else {
+        firebase
+            .auth()
+            .signInWithEmailAndPassword(userid, pass)
+            .then((userCredential) => {
+                let timerInterval
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Login as User Successfuly!',
+                    html: 'you will automatically Redirect after <b></b> milliseconds.',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                        const b = Swal.getHtmlContainer().querySelector('b')
+                        timerInterval = setInterval(() => {
+                            b.textContent = Swal.getTimerLeft()
+                        }, 100)
+                    },
+                    willClose: () => {
+                        if (screen.availWidth < 768) {
+                            window.location = 'mob/mob.html'
+
+                        } else {
+                            window.location = 'home.html'
+                        }
+                    }
+                }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        console.log('I was closed by the timer')
+                    }
+                })
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: error.message,
+                    footer: error.code
+                })
+
+            });
+    }
+
+
 
 }
 
@@ -112,7 +137,7 @@ function gmail() {
             var user = result.user;
             Swal.fire({
                 icon: 'success',
-                title: 'Login Successfuly!',
+                title: 'Login as User Successfuly!',
                 html: 'you will automatically Redirect after <b></b> milliseconds.',
                 timer: 2000,
                 timerProgressBar: true,
@@ -175,7 +200,7 @@ function apple() {
             var idToken = credential.idToken;
             Swal.fire({
                 icon: 'success',
-                title: 'Login Successfuly!',
+                title: 'Login as User Successfuly!',
                 html: 'you will automatically Redirect after <b></b> milliseconds.',
                 timer: 2000,
                 timerProgressBar: true,

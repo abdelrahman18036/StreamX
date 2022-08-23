@@ -41,11 +41,11 @@ const displayfilms = async(doc) => {
             const film = doc.data();
             let item = `
             <div class="card swiper-slide" data-id="${doc.id}">
-                                <img src="${film.img}" alt="" />
+                                <img src="${film.email}" alt="" />
                                 <div style="width: 90%" class="border"></div>
                                 <div class="text">
                                     <p class="title">${film.name}</p>
-                                    <p class="time-left">Time left:  ${film.timeleft}</p>
+                                    <p class="time-left">Time left:  ${film.address}</p>
                                     <button>
                                     <a href="film-page.html"
                                     ><svg
