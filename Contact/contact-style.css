@@ -105,7 +105,7 @@ body{
     margin-left: 37px;
     margin-top: 25px;
     width: 435px;
-
+    height: -webkit-fill-available;
 
 }
 
@@ -167,7 +167,7 @@ body{
 }
 
 
-@media(max-width: 420px){
+@media(max-width: 720px){
     
     
 

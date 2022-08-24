@@ -35,7 +35,7 @@ header .container {
 }
 
 .cover {
-    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(/media/62faedc62bdc1.jpg);
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(media/62faedc62bdc1.jpg);
     height: 500px;
     background-position: center;
     background-size: cover;
@@ -263,17 +263,3 @@ hr {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
-
-/* .cover::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 6px 5px rgb(0 0 0);
-    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0)), url(/media/62faedc62bdc1.jpg);
-    ;
-    z-index: -1;
-    height: 500px;
-    position: absolute;
-    background-position: center;
-    background-size: cover;
-} */

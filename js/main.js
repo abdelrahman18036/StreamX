@@ -1,7 +1,7 @@
 const change = (element, text) => {
-  var active = document.getElementById('active');
+  var active = document.getElementById('active1');
   active.removeAttribute('id')
-  element.setAttribute('id', 'active')
+  element.setAttribute('id', 'active1')
   // element.parentNode.parentNode.style.transition = "background-image 0.3s"
   element.parentNode.parentNode.style.backgroundImage = 
   `url(${element.children[0].src})`;
