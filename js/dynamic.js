@@ -33,7 +33,7 @@ const displayfilms = async(doc) => {
     let films = filmref;
     // .startAfter(doc || 0).limit(10000)
 
-    const data = await films.get();
+    const data = await films.orderBy("id", "asc").get();
 
     data
         .docs
