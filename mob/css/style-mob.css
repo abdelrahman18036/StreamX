@@ -82,7 +82,7 @@ body {
     background-size: cover;
 }
 
-.home{
+.home {
     overflow-x: hidden;
 }
 
@@ -205,7 +205,7 @@ header .container {
     animation-timing-function: linear;
 }
 
-.swiper-container{
+.swiper-container {
     margin: 0 35px;
 }
 
@@ -266,11 +266,11 @@ header .container {
 }
 
 
-.card-systems .wrap{
+.card-systems .wrap {
     height: 280px;
 }
 
-.swiper-slide{
+.swiper-slide {
     height: 130px;
 }
 
@@ -726,4 +726,8 @@ footer .socials li a:hover,
     .app {
         padding: 15px 9px;
     }
+}
+
+.icon>a>.profile {
+    width: 28px;
 }
