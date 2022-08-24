@@ -15,6 +15,7 @@
 body {
     overflow-x: hidden;
     background-color: #000101;
+    max-width: 100%;
 
 }
 
@@ -50,7 +51,7 @@ hr {
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    margin: auto;   
+    margin: auto;
     flex-wrap: wrap;
 }
 
@@ -222,6 +223,24 @@ video {
         position: absolute;
         height: 300%;
     }
+
+    footer .socials li,
+    footer .menu li {
+        margin: auto;
+        list-style: none;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background: #272726;
+    }
 }
 
 /* width */
@@ -267,21 +286,20 @@ h2 {
     margin-top: 40px;
 }
 
-@media (min-width: 1500px){
-    .cont{
+
+@media (min-width: 1500px) {
+    .cont {
         width: 70%;
     }
 }
 
-@media (max-width: 1300px){
-    .cont{
+@media (max-width: 1300px) {
+    .cont {
         width: 100%;
     }
 }
 
-.all{
-    
-}
+.all {}
 
 footer {
     margin-top: 50px;
