@@ -227,3 +227,161 @@ body {
 
 
 }
+
+footer {
+    margin-top: -36px;
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #272726;
+}
+
+footer .socials,
+footer .menu {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.social {
+    flex-direction: column;
+}
+
+footer h3,
+footer p {
+    color: white;
+    margin: 0 10px 20px 10px;
+    padding: 0 40px;
+    max-width: 800px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+footer h4 {
+
+    color: white;
+    margin: 0 10px 20px 10px;
+    /* padding:0 40px;  */
+    max-width: 800px;
+    letter-spacing: 0.5px;
+}
+
+footer .socials li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .menu {
+    margin-bottom: 0 10px 20px 10px;
+    font-size: 11px;
+}
+
+footer .socials li a {
+    font-size: 2em;
+    color: aliceblue;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: aliceblue;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer .socials li a:hover,
+.app img:hover {
+    transform: translateY(-10px);
+}
+
+.app {
+    padding: 15px 50px;
+
+}
+
+.app img {
+
+    width: 120px;
+    transition: 0.5s;
+}
+
+
+@media(max-width:950px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+}
+
+.icons222 {
+    display: flex;
+
+}
+
+@media (min-width:615px) and (max-width: 870px) {
+    .icons222 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #272726;
+    }
+}
+
+@media (max-width:614.9px) {
+    .icons222 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #272726;
+    }
+
+    footer .socials li a {
+        font-size: 17px;
+        color: aliceblue;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    .app {
+        padding: 15px 9px;
+    }
+}
